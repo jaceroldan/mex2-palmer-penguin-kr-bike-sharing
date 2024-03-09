@@ -19,10 +19,10 @@ The dataset contains 345 penguins from the Palmer Archipelago, Antarctica. Simil
 
 Your task is to classify the penguins into their species (Adelie, Chinstrap, and Gentoo) based only on the culmen length and flipper length features.
 
-a. [5 pts] First visualize the 4 numerical features of the data using Seaborn’s pair plot, then set the hue to the penguin species.
-b. [20 pts] Split the samples into 75% Training and 25% Testing data at random with stratification (stratify=y). Build a pipeline with Standard scaler then SVC. Train the model using the default settings for multi-class SVC in sklearn. Report the accuracy, macro-averaged F1-score, and confusion matrix of the trained model separately for the training data and testing data.
-c. [5 pts] For your answer in letter (a), visualize the decision boundary in the space of culmen length vs. flipper length. Add a scatter plot of the training and test data set (use different markers for the two sets).
-d. [20 pts] Find a better model by varying the box constraint, kernel function, kernel parameter, and multi-class strategy. Evaluate only at least 5 candidate SVC models, each having a certain combination of settings. Report the metrics of the best SVC model that you found, same as in (a).
+1. [5 pts] First visualize the 4 numerical features of the data using Seaborn’s pair plot, then set the hue to the penguin species.
+2. [20 pts] Split the samples into 75% Training and 25% Testing data at random with stratification (stratify=y). Build a pipeline with Standard scaler then SVC. Train the model using the default settings for multi-class SVC in sklearn. Report the accuracy, macro-averaged F1-score, and confusion matrix of the trained model separately for the training data and testing data.
+3. [5 pts] For your answer in letter (a), visualize the decision boundary in the space of culmen length vs. flipper length. Add a scatter plot of the training and test data set (use different markers for the two sets).
+4. [20 pts] Find a better model by varying the box constraint, kernel function, kernel parameter, and multi-class strategy. Evaluate only at least 5 candidate SVC models, each having a certain combination of settings. Report the metrics of the best SVC model that you found, same as in (a).
 
 #### Predicting Bike Sharing Demand in South Korea using SVC
 
@@ -34,7 +34,7 @@ Take only the weather data + hour of the day as inputs: Hour, Temperature, Humid
 
 Your goal is to predict the bike demand (Rented Bike Count).
 
-a. [5 pts] First, visualize the weather data and the Rented Bike Count using box plots.
-b. [20 pts] Split the data into 70% training and 30% testing at random. Make a pipeline using Standard Scaler and SVR. Train the model using the training set, then report the RMSE (root mean squared error) on the Test Set. You can fine-tune your own SVR by changing the kernel function, kernel parameter, and epsilon.
-c. [20 pts] Do the same as (b) but now using Standard Scaler + KRR. You can fine-tune your KRR by changing the kernel function, kernel parameter, and regularization (alpha).
-d. [5 pts] Do the same as (b) but now using simple Linear Regression. Compare the results of your SVR, KRR, and Linear Regression.
+1. [5 pts] First, visualize the weather data and the Rented Bike Count using box plots.
+2. [20 pts] Split the data into 70% training and 30% testing at random. Make a pipeline using Standard Scaler and SVR. Train the model using the training set, then report the RMSE (root mean squared error) on the Test Set. You can fine-tune your own SVR by changing the kernel function, kernel parameter, and epsilon.
+3. [20 pts] Do the same as (b) but now using Standard Scaler + KRR. You can fine-tune your KRR by changing the kernel function, kernel parameter, and regularization (alpha).
+4. [5 pts] Do the same as (b) but now using simple Linear Regression. Compare the results of your SVR, KRR, and Linear Regression.
