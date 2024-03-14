@@ -1,0 +1,13 @@
+1 MEX 2: Kernel Methods
+2 First subproblem: Palmer Penguin Species Data Set 
+
+In this problem, we are building a C-SVM model to help predict species of penguins by their culmen depth, culmen length and flipper length. The dataset can be retreived from https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data
+
+3 Visualization of the counts of classes from the dataset
+In this section, we tried to see if there is a balanced number of samples from the three species. We are trying to see if there is a class imbalance since the minority class may be harder to predict. From the bar chart, we can see that the Adelie species have the highest number of samples with 151, while Chinstrap with 123 samples, and Gentoo with 68 samples. This is concerning since Gentoo is more than twice lesser than Adelie samples. Because of this we would like to plot if there is an overlap between these three classes since this may affect the prediction of the model. If there is a significant overlap, we may be forced to use Synthetic Minority Oversampling Technique (SMOTE)
+
+4. Pairplot for the three features and three species
+In this section, we used a seaborn sns pairplot to visualize which two features we can use on the SVM model that can classify the three species. From the pairplot, we can see that when we pair culmen length against flipper length, we can see that the plots of the three species are more separable compared to other pariplots with less overlaps. This is important because Gentoo has smaller samples. We want their characteristics to be more distinct compared to the other classes so that we can have better prediction results. So now, we'll create an SVM model that uses both culmen length and flipper length.
+
+5. Build C-SVM pipeline
+In this section we used C-SVM for multi-class classfication. We plan to use One vs. Rest, One vs. One and ECOC classifiers and compare their results. The features that we used were both the culmen length and flipper length. We visualized the decision boundaries by showing a scatterplot for both training and testing sets. We also reported the models' performance with their accuracy, macro-averaged F1-score, and confusion matrix. The metrics computation and decision boundaries were executed in one function so that we can get a better comparison between the strategies.
